@@ -1,0 +1,14 @@
+<%= content(@conn, "Blog Image", :image, alt: "Blog image",
+  do: "https://www.placehold.it/300x150") %>
+
+<div class="col-lg-4">
+<%= content(@conn, "Blog title", :html) do %>
+  <h2>Blog title goes here</h2>
+<% end %>
+</div>
+
+<div class="col-lg-6">
+  <%= content(@conn, "Blog post", :html) do %>
+    <p>Blog post goes here</p>
+  <% end %>
+</div>

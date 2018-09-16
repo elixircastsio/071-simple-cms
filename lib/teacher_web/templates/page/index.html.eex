@@ -1,0 +1,9 @@
+<%= content(@conn, "Homepage heading", :html) do %>
+  <h2>The Record Blog</h2>
+<% end %>
+
+<div class="col-lg-6">
+  <%= content(@conn, "Homepage summary", :html) do %>
+    <p>Welcome to the Record Blog - where we talk about great music.</p>
+  <% end %>
+</div>
